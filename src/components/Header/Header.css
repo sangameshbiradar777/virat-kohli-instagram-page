@@ -1,0 +1,31 @@
+.header {
+  background-color: var(--bg-light-2);
+  padding: var(--spacing-10);
+}
+
+.content--header {
+  display: flex;
+}
+
+.header__profile-picture {
+  padding: 0 var(--spacing-12);
+}
+
+.header__profile-picture img {
+  height: var(--spacing-14);
+  border-radius: 50%;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-08);
+  flex: 1;
+}
+
+
+
+
+
+
+

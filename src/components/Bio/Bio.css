@@ -1,0 +1,22 @@
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-01);
+}
+
+.bio__text {
+  font-size: var(--fs-05);
+}
+
+.bio__text--username {
+  font-weight: 500;
+}
+
+.bio__text--email {
+  color: var(--text-dark-2);
+}
+
+.bio__text--website {
+  font-weight: 500;
+  color: var(--text-dark-1);
+}

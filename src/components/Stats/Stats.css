@@ -1,0 +1,12 @@
+.stats {
+  display: flex;
+  gap: var(--spacing-10);
+}
+
+.stats__text {
+  font-size: var(--fs-04);
+}
+
+.stats__text__strong {
+  font-weight: 500;
+}

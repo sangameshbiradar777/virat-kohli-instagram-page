@@ -1,0 +1,30 @@
+.content--reels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: var(--spacing-07);
+  grid-column-gap: var(--spacing-08);
+  position: relative;
+}
+
+.reels-grid__item {
+  width: 100%;
+  height: var(--spacing-13);
+}
+
+.reels-grid__item img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.reels-grid__action {
+  position: absolute;
+  bottom: var(--spacing-09);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.reels-grid__action button {
+  border-radius: var(--spacing-10);
+}

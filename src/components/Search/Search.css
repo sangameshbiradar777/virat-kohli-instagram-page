@@ -1,0 +1,26 @@
+.search {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-main);
+  padding: var(--spacing-04) var(--spacing-03);
+  border-radius: var(--spacing-04);
+  width: 25%;
+}
+
+.search [name='search-outline'] {
+  color: var(--grey-1);
+  font-size: var(--fs-03);
+  padding: 0 var(--spacing-04)
+}
+
+.search__input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: var(--fs-04);
+}
+
+.search__input::placeholder {
+  color: var(--grey-1);
+  font-weight: 300;
+}

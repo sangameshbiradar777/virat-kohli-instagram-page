@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Setting the font size to 10px for easy calculations */
+/* 10 % 16 * 100 = 62.5% */
+:root {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Color Palette */
+:root {
+  --primary-main: #0095F6;
+  --primary-light: #4692f5;
+  --primary-dark: #1877f2;
+  --secondary-main: #efefef;
+  --secondary-dark: #dbdbdb;
+  --grey-1: #8e8e8e;
+  --bg-light-1: #FFF;
+  --bg-light-2: #FAFAFA;
+  --text-light: #fff;
+  --text-dark-1: #222;
+  --text-dark-2: #444;
+  --text-dark-3: #666;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Type Scale */
+:root {
+  --fs-01: 2.281rem;
+  --fs-02: 2.027rem;
+  --fs-03: 1.802rem;
+  --fs-04: 1.602rem;
+  --fs-05: 1.484rem;
+  --fs-06: 1.266rem;
+  --fs-07: 1.125rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* Spacing System */
+:root {
+  --spacing-01: 0.125rem;
+  --spacing-02: 0.25rem;
+  --spacing-03: 0.5rem;
+  --spacing-04: 0.75rem;
+  --spacing-05: 1rem;
+  --spacing-06: 1.5rem;
+  --spacing-07: 2rem;
+  --spacing-08: 2.5rem;
+  --spacing-09: 3rem;
+  --spacing-10: 4rem;
+  --spacing-11: 5rem;
+  --spacing-12: 6rem;
+  --spacing-13: 10rem;
+  --spacing-14: 16rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+input {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: underline;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: var(--spacing-04) var(--spacing-06);
+  font-size: var(--fs-05);
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: var(--spacing-04);
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--primary-main);
+  color: var(--text-light);
+  
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--primary-main);
+}
+
+.btn--tertiary {
+  background-color: var(--secondary-main);
+  color: var(--text-dark-1);
+}
+
+.btn--primary:hover, 
+.btn--primary:active,
+.btn--primary:focus {
+  background-color: var(--primary-dark);
+}
+
+.btn--secondary:hover, 
+.btn--secondary:active,
+.btn--secondary:focus { 
+  background-color: var(--secondary-dark);
 }

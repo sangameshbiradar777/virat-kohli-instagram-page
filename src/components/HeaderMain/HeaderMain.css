@@ -1,0 +1,38 @@
+.header__main {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-10);
+}
+
+.header__main__name {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-03);
+}
+
+.header__main__name h1 {
+  font-size: var(--fs-03);
+  font-weight: 400;
+  color: var(--text-dark-1);
+}
+
+.header__main__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-05);
+}
+
+.header__main__more [name='ellipsis-horizontal'] {
+  font-size: var(--fs-02);
+  color: var(--text-dark-1);
+}
+
+.material-symbols-outlined {
+  color: var(--primary-main);
+  font-size: var(--fs-02);
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' -15,
+  'opsz' 10
+}
