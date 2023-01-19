@@ -17,12 +17,13 @@ const Search = () => {
 
   return (
     <div className="search">
-      <span
+      {/* <span
         ref={searchIconRef}
         className="search__icon material-symbols-rounded"
       >
         search
-      </span>
+      </span> */}
+      <ion-icon ref={searchIconRef} name="search-outline"></ion-icon>
       <input
         className="search__input"
         ref={searchInpuRef}

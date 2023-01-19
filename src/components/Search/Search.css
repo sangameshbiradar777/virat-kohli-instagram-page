@@ -7,9 +7,9 @@
   width: 30%;
 }
 
-.search__icon {
+[name='search-outline'] {
   color: var(--grey-1);
-  font-size: var(--fs-02);
+  font-size: var(--fs-03);
   padding: 0 var(--spacing-04);
 }
 
