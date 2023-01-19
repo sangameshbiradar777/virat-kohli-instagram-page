@@ -53,11 +53,14 @@
   --spacing-12: 6rem;
   --spacing-13: 10rem;
   --spacing-14: 16rem;
+  --spacing-15: 32rem;
 }
 
 .content {
   max-width: 960px;
   margin: 0 auto;
+  padding-left: var(--spacing-05);
+  padding-right: var(--spacing-05);
 }
 
 input {
@@ -111,5 +114,19 @@ a:focus {
 .btn--secondary:hover, 
 .btn--secondary:active,
 .btn--secondary:focus { 
+  color: var(--primary-dark);
+}
+
+.btn--tertiary:hover, 
+.btn--tertiary:active,
+.btn--tertiary:focus {
   background-color: var(--secondary-dark);
 }
+
+button:focus, 
+a:focus {
+  box-shadow: 0 0 0 var(--spacing-03) rgba(0, 0, 0, .2);
+  border-radius: var(--spacing-04);
+}
+
+

@@ -1,0 +1,12 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: var(--spacing-14);
+}
+
+.error__message {
+  color: var(--grey-1);
+  font-size: var(--fs-01);
+  font-weight: 500;
+}

@@ -1,7 +1,6 @@
 import "./Main.css";
 import PhotosGrid from "../PhotosGrid";
 import ReelsGrid from "../ReelsGrid";
-import TaggedGrid from "../TaggedGrid";
 import { useState } from "react";
 import Tabs from "../Tabs";
 import PostsSVG from "../../assets/svg/Posts";
@@ -20,7 +19,7 @@ const Main = ({ user }) => {
   } else if (currentTab === "reels") {
     mainElement = <ReelsGrid />;
   } else {
-    mainElement = <TaggedGrid />;
+    mainElement = <PhotosGrid user={user}/>;
   }
 
   return (

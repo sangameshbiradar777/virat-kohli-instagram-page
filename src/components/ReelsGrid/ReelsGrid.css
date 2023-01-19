@@ -1,18 +1,18 @@
 .content--reels-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: var(--spacing-07);
-  grid-column-gap: var(--spacing-08);
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-08);
   position: relative;
 }
 
 .reels-grid__item {
   width: 100%;
-  height: var(--spacing-13);
+  height: var(--spacing-15);
 }
 
 .reels-grid__item img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }

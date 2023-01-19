@@ -1,6 +1,10 @@
 .header {
   background-color: var(--bg-light-2);
-  padding: var(--spacing-10);
+  padding: var(--spacing-13) var(--spacing-10) var(--spacing-10);
+}
+
+.header--sm {
+  display: none;
 }
 
 .content--header {

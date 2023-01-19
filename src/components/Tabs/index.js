@@ -10,7 +10,8 @@ const Tabs = ({ tabs, currentTab, setCurrentTab }) => {
         const Icon = tab.icon;
         return (
           <button key={tab.name} className={className} onClick={() => setCurrentTab(tab.name)}>
-            <Icon /> {tab.name}
+            <Icon /> 
+            <span className="tab__name">{tab.name}</span>
           </button>
         );
       })}

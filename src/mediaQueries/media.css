@@ -1,0 +1,133 @@
+@media screen and (max-width: 850px) {
+  .header__profile-picture {
+    padding-left: var(--spacing-06);
+  }
+
+  .search{
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar {
+    padding-left: var(--spacing-07);
+  }
+
+  .header {
+    padding: var(--spacing-12) 0 0;
+  }
+
+  .content--header {
+    gap: var(--spacing-08);
+    padding-top: var(--spacing-06);
+  }
+
+  .header__profile-picture {
+    padding: 0;
+  }
+
+  .header__profile-picture img {
+    height: var(--spacing-13);
+  }
+
+  .header__main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-08);
+  }
+
+  .header__main__more--sm-screen {
+    display: block;
+  }
+
+  .header__main__more--lg-screen {
+    display: none;
+  }
+
+  .header--sm {
+    display: flex;
+  }
+
+  .header--lg {
+    display: none;
+  }
+
+  .header--sm__info {
+    display: flex;
+    gap: var(--spacing-07);
+    align-items: center;
+    padding: 0 var(--spacing-07);
+  }
+
+  .bio {
+    padding: 0 var(--spacing-07);
+  }
+
+  .content--header {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .stats {
+    border-top: 1px solid var(--secondary-dark);
+    padding: var(--spacing-04) 0;
+  }
+
+  .stats__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    color: var(--grey-1);
+  }
+
+  .tabs {
+    justify-content: center;
+  }
+
+  .btn-tab {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .btn-tab svg {
+    width: var(--spacing-08);
+    height: var(--spacing-08);
+  }
+
+  .tab__name {
+    display: none;
+  }
+
+  .content--photos-grid {
+    gap: var(--spacing-02);
+  }
+
+  .content--reels-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-01);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .content--reels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  :root {
+    font-size: 50%;
+  }
+}

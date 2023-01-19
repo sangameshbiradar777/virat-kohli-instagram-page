@@ -9,4 +9,5 @@
 
 .stats__text__strong {
   font-weight: 500;
+  color: var(--text-dark-1);
 }

@@ -22,9 +22,16 @@
   gap: var(--spacing-05);
 }
 
-.header__main__more [name='ellipsis-horizontal'] {
+.header__main__more {
+  margin-left: var(--spacing-04);
   font-size: var(--fs-02);
   color: var(--text-dark-1);
+  background-color: transparent;
+}
+
+.header__main__more--sm-screen {
+  display: none;
+  margin-left: var(--spacing-06);
 }
 
 .material-symbols-outlined {

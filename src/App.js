@@ -3,19 +3,22 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import Error from "./components/Error";
+import Loader from "./components/Loader";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { userInfoEndpoint } from "./config";
+import "./mediaQueries/media.css";
 
 function App() {
   const [user, setUser] = useState({});
-  const [isLoadingUser, setIsLoadingUser] = useState(false);
   const [error, setError] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     (async () => {
       try {
-        setIsLoadingUser(true);
+        setIsLoading(true);
         const userResponse = await axios.get(userInfoEndpoint);
         const user = userResponse.data;
         setUser(user);
@@ -23,7 +26,7 @@ function App() {
         console.error(error.message);
         setError(error);
       } finally {
-        setIsLoadingUser(false);
+        setIsLoading(false);
       }
     })();
   }, []);
@@ -31,8 +34,16 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Header user={user} />
-      <Main user={user} />
+      {isLoading ? (
+        <Loader isUserLoader />
+      ) : error.message ? (
+        <Error />
+      ) : (
+        <>
+          <Header user={user} error={error} />
+          <Main user={user} />
+        </>
+      )}
       <Footer />
     </div>
   );
