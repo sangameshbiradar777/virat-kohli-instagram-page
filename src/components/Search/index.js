@@ -17,12 +17,6 @@ const Search = () => {
 
   return (
     <div className="search">
-      {/* <span
-        ref={searchIconRef}
-        className="search__icon material-symbols-rounded"
-      >
-        search
-      </span> */}
       <ion-icon ref={searchIconRef} name="search-outline"></ion-icon>
       <input
         className="search__input"
@@ -33,12 +27,7 @@ const Search = () => {
         placeholder="Search"
       />
       {searchText && (
-        <span
-          onClick={handleOnClearSearchText}
-          className="close__icon material-symbols-rounded"
-        >
-          cancel
-        </span>
+        <ion-icon onClick={handleOnClearSearchText} name="close-circle"></ion-icon>
       )}
     </div>
   );

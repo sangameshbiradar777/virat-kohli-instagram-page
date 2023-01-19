@@ -14,7 +14,6 @@ const ReelsGrid = () => {
 
   const handleObserver = useCallback((entries) => {
     const target = entries[0];
-    console.log(target);
     if (target.isIntersecting) {
       setCurrentReelsCount(
         (prevReelsCount) => prevReelsCount + MAX_REELS_COUNT
@@ -54,16 +53,18 @@ const ReelsGrid = () => {
     </div>
   ));
 
-  return  error.message ? (
+  return error.message ? (
     <Error />
   ) : (
     <>
       <div className="reels-grid">
         <div className="content content--reels-grid">{reelsGridItems}</div>
       </div>
-      <div ref={lazyLoadRef}>
-        <Loader />
-      </div>
+      {currentReelsCount <= reels.length && (
+        <div ref={lazyLoadRef}>
+          <Loader />
+        </div>
+      )}
     </>
   );
 };

@@ -51,7 +51,7 @@ const PhotosGrid = ({ user }) => {
     <div className="photos-grid">
       <div className="content content--photos-grid">
         {photosGridItems}
-        {!!photosGridItems.length && (
+        {!!photosGridItems.length && currentPhotosCount < photos.length && (
           <div className="photos-grid__action">
             <button
               className="btn btn--primary"

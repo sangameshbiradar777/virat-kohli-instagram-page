@@ -13,9 +13,9 @@
   padding: 0 var(--spacing-04);
 }
 
-.close__icon {
+[name='close-circle']{
   color: var(--grey-1);
-  font-size: var(--fs-02);
+  font-size: var(--fs-03);
   padding: 0 var(--spacing-02);
   cursor: pointer;
 }
