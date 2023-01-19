@@ -43,7 +43,7 @@ const ReelsGrid = () => {
       } catch (error) {
         console.error(error.message);
         setError(error);
-      } 
+      }
     })();
   }, []);
 
@@ -53,6 +53,8 @@ const ReelsGrid = () => {
     </div>
   ));
 
+  console.log(currentReelsCount, reels.length);
+
   return error.message ? (
     <Error />
   ) : (
@@ -60,11 +62,9 @@ const ReelsGrid = () => {
       <div className="reels-grid">
         <div className="content content--reels-grid">{reelsGridItems}</div>
       </div>
-      {currentReelsCount <= reels.length && (
-        <div ref={lazyLoadRef}>
-          <Loader />
-        </div>
-      )}
+      <div ref={lazyLoadRef}>
+        <Loader />
+      </div>
     </>
   );
 };
